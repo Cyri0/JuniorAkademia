@@ -1,0 +1,405 @@
+:root {
+    --my_green: #64B350;
+    --my_purple: #963CBA;
+    --my_blue: #34A4DD;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar_logo{
+    width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-link{
+    font-family: 'Audiowide', cursive;
+    margin: auto;
+    line-height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+}
+.apply_btn{
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid var(--my_green);
+    color: var(--my_green);
+    font-family: 'Audiowide', cursive;
+    max-width: 250px;
+    margin: auto;
+}
+
+.apply_btn:hover{
+    background-color: var(--my_green);
+    color: white;
+}
+
+.page{
+    display: none ;
+    width: 100vw;
+    height: calc(100vh - 84.5px);
+    position: absolute;
+}
+
+.actual {
+    display: block;
+}
+
+#landing_page{
+    background-color: var(--my_blue);
+}
+
+
+
+/*
+LANDING PAGE
+*/
+.landing_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+
+.title{
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    padding-top: 25px;
+}
+
+
+
+.green_font {
+    color: var(--my_green)
+}
+
+.blue_font {
+    color: var(--my_blue)
+}
+
+.purple_font{
+    color: var(--my_purple);
+}
+
+.basics{
+    width: 250px;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.basics a{
+    color: white;
+    text-decoration: underline;
+}
+
+#navbarSupportedContent{
+    margin-left: 15vw;
+}
+
+.carousel_img_holder{
+    max-width: 868px;
+    width: 50vw;
+    height:500px;
+    background-color: gray;
+    margin: auto;
+}
+
+.carousel_img{
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 500px;
+    width: 100%;
+}
+
+
+.subscribe_btn{
+    float: right;
+    margin-right: 20px;
+    margin-top: 400px;
+    width: 192px;
+    height: 72px;
+    color: var(--my_green);
+    border: 3px solid var(--my_green);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Audiowide', cursive;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.subscribe_btn:hover{
+    background-color: var(--my_green);
+    color: white;
+}
+
+
+.carousel_nav{
+    height: 70px;
+    width: 45px;
+    margin-top: 200px;
+    background-image: url("../pics/lila.png");
+    background-size: cover;
+    background-position: center;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#back{
+    float: left;
+    margin-left: 10vw;
+    transform: rotate(180deg);
+}
+
+#forward{
+    float: right;
+    margin-right: 10vw;
+}
+
+
+.slide2_content{
+    height: 100%;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.7);
+    float: right;
+    padding: 20px;
+}
+
+.slide2_content p {
+    line-height: 20px;
+    padding-top: 2vw;
+}
+
+
+.map{
+    width: 60%;
+    height: 100%;
+}
+
+.map_text{
+    width: 40%;
+    height: 100%;
+    float: right;
+    padding: 20px;
+    background-color: var(--my_blue);
+    color: white;
+}
+
+.map_text p a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 1482px){
+    #navbarSupportedContent{
+        margin-left: 4vw;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .map{
+        width: 100%;
+    }
+
+    .map_text{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .carousel_img_holder{
+        max-width: 868px;
+        width: 80vw;
+        height:400px;
+        margin: auto;
+    }
+
+    .carousel_img{
+        height: 400px;
+    }
+
+    .subscribe_btn{
+        margin-top: 300px;
+
+    }
+
+    .carousel_nav{
+        display: none;
+    }
+
+    .carousel-indicators{
+        display: none;
+    }
+
+    .slide2_content{
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 500px){
+    .landing_board{
+        margin-top: 20px;
+        height: 500px;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+
+    .basics{
+        width: 100vw;
+        font-size: 10px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .subscribe_btn{
+        margin-top: 50px;
+    }
+}
+
+/*
+ABOUT PAGE
+*/
+
+#about_page{
+    background-color: var(--my_green);
+    min-height: calc(100vh - 84.5px);
+    height: auto;
+}
+
+.about_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+/*
+MATRIC PAGE
+*/
+
+#matric_page{
+    background-color: var(--my_purple);
+
+}
+
+.matric_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+
+/*
+CAMP PAGE
+*/
+
+#camp_page{
+    background-color: var(--my_blue);
+
+}
+
+.camp_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+
+/*
+ORIENTATION PAGE
+*/
+
+#orientation_page{
+    background-color: var(--my_green);
+}
+
+.orientation_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+
+/*
+ROBOTICS PAGE
+*/
+
+#robotics_page{
+    background-color: var(--my_purple);
+}
+
+.robotics_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
+
+
+/*
+ROBOTICS PAGE
+*/
+
+#languages_page{
+    background-color: var(--my_blue);
+}
+
+.languages_board{
+    width: 95vw;
+    height: 600px;
+    background-color: white;
+    margin: auto;
+    margin-top: 112px;
+    
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.25);
+}
